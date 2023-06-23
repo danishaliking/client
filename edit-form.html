@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Management </title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-10">
+          <h1>Edit i data del clients</h1>
+        </div>
+        <div class="col-2">
+          <button type="submit" class="btn btn-secondary mt-2 mx-5"><a
+              href="index.html">Back</a></button>
+        </div>
+      </div>
+      <!-- form page 1 -->
+      <form action>
+        <!-- Name  -->
+        <div>
+          <label for="name">Nome:</label>
+          <input type="name" id="name" name="name">
+        </div>
+        <!-- c.fiscale -->
+        <div>
+          <label for="name">C.Fiscale:</label>
+          <input type="name" id="name" name="name">
+        </div>
+        <!-- Select -->
+        <div>
+          <label>CQS/CQP:</label>
+          <select>
+            <option>Seleziona una opzione</option>
+            <option>CQS</option>
+            <option>CQP</option>
+          </select>
+        </div>
+        <!-- email -->
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <!-- telefono -->
+        <div>
+          <label for="telefono">Telefono:</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+        <!-- date / time -->
+        <div>
+          <label for="date">Data Prime Chiamata:</label>
+          <input type="datetime-local" id="date" name="date">
+        </div>
+        <!-- Select -->
+        <div>
+          <label>Esito:</label>
+          <select>
+            <option>Seleziona una opzione</option>
+            <option>Recal</option>
+            <option>Attesa Doc.</option>
+            <option>Non Interessato</option>
+            <option>Non Risponde</option>
+          </select>
+        </div>
+        <!-- informazionio-->
+        <div>
+          <label for="informazioni">Informazioni:</label>
+          <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
+        </div>
+        <!-- Select -->
+        <div>
+          <label>Finanziamenti in corso:</label>
+          <select>
+            <option>Seleziona una opzione</option>
+            <option>Si</option>
+            <option>No</option>
+          </select>
+        </div>
+        <!-- date / time -->
+        <div>
+          <label for="date">Data e ora del prossimo richiamo:</label>
+          <input type="datetime-local" id="date" name="date">
+        </div>
+        <!-- button -->
+        <button type="submit" class="btn btn-primary mt-2">Inserisci</button>
+      </form>
+    </div>
+  </body>
+
+</html>

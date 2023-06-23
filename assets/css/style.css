@@ -1,0 +1,220 @@
+.fixed-b-tabs {
+  position: fixed;
+  bottom: 1px;
+  z-index: 999;
+}
+
+/* tables style*/
+.table td {
+  padding: 0px;
+  vertical-align: middle;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+tr{
+  border: 1px solid black;
+}
+
+h2 {
+  margin: 0px;
+  padding: 5px;
+  background-color: rgb(0, 175, 80);
+}
+
+td {
+  font-weight: 500;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+}
+
+/* end table style */
+
+
+/* form container */
+.container-fluid label {
+  font-size: 20px;
+  color: black;
+
+}
+
+/* Recall section */
+.secondary th {
+  background-color: rgb(214, 214, 214);
+}
+
+.active-green {
+  background-color: rgb(253, 171, 61);
+  color: white;
+  border: 2px solid rgb(241, 148, 41);
+}
+
+/* Attesa doc section */
+.active-2 {
+  background-color: rgb(22, 190, 98);
+  color: white;
+  border: 2px solid rgb(0, 143, 64);
+}
+
+/* Interessato section */
+.container-fluid .danger {
+  background-color: rgb(254, 0, 1);
+}
+
+.container-fluid .table .active-3 {
+  border: 2px solid rgb(170, 65, 81);
+  color: white;
+  width: 10%;
+
+}
+
+/* Risponde section */
+.container-fluid .silver {
+  background-color: rgb(230, 230, 230);
+}
+
+.active-4 {
+  color: white;
+  background-color: rgb(196, 196, 196);
+  border: 2px solid rgb(178, 172, 176);
+}
+
+/* Total section */
+
+.container-fluid .dark {
+  background-color: rgb(121, 121, 121);
+}
+
+/* All table width Date/time */
+.container-fluid .table .mw-125 {
+  width: 125px;
+}
+
+/* All tables information client */
+.expandable-cell p {
+  max-height: 50px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+.expandable-cell p:hover {
+  overflow: auto;
+}
+
+/* ALL tables first child */
+tr td:first-child,
+tr th:first-child {
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* buttons */
+.light {
+  background-color: rgb(230, 232, 231);
+  color: black;
+
+}
+
+.container-fluid .nav-pills .nav-link {
+  color: black;
+}
+
+.container-fluid .nav {
+  gap: 10px;
+}
+
+.container-fluid .nav-pills .nav-link {
+  border-radius: 8px;
+}
+
+.container-fluid .nav-pills .orange {
+  background-color: rgb(253, 171, 61);
+}
+
+.container-fluid .nav-pills .green {
+  background-color: rgb(22, 190, 98);
+}
+
+.container-fluid .nav-pills .red {
+  background-color: rgb(254, 0, 1);
+  color: white;
+}
+
+.container-fluid .nav-pills .silver {
+  background-color: rgb(170, 165, 165);
+}
+
+.container-fluid .nav-pills .black {
+  background-color: black;
+  color: white;
+}
+
+.container-fluid .nav-pills .active {
+  background: white;
+  background-image: linear-gradient(white, #d9cccc);
+  border-bottom: 3px solid green;
+  color: black;
+}
+
+/* icons */
+.icons img {
+  max-width: 20px;
+  margin: 0px 5px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.container-fluid .row a {
+  text-decoration: none;
+  color: white;
+  padding: 7px 15px;
+
+}
+.row{
+  margin-right: 0px;
+}
+/* .container-fluid .text{
+  position: absolute;
+    right: 0px;
+    background: white;
+    width: 114px;
+    height: 49px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+} */
+.table {
+
+  overflow: auto;
+}
+
+
+/* media query */
+@media (max-width:1200px) {
+  
+  table {
+    min-width: 1400px;
+  }
+}
+@media (max-width:992px) {
+  
+.navigarion-menu{
+  min-width: 800px;
+}
+}

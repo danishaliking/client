@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>table2</title>
+        <!-- bootstrap link -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- styling link -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+    </head>
+
+    <body>
+
+        <div class="tab-content" id="pills-tabContent">
+            <!-- modula -->
+            <div class="tab-pane fade show" id="pills-modula" role="tabpanel"
+                aria-labelledby="pills-modula-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Inserisci i data del clients</h1>
+                        </div>
+                    </div>
+                    <!-- form page 1 -->
+                    <form action>
+                        <!-- Name  -->
+                        <div>
+                            <label for="name">Nome:</label>
+                            <input type="name" id="name" name="name">
+                        </div>
+                        <!-- c.fiscale -->
+                        <div>
+                            <label for="name">C.Fiscale:</label>
+                            <input type="name" id="name" name="name">
+                        </div>
+                        <!-- Select CQS/CQP: -->
+                        <div>
+                            <label>CQS/CQP:</label>
+                            <select>
+                                <option>Seleziona una opzione</option>
+                                <option>CQS</option>
+                                <option>CQP</option>
+                            </select>
+                        </div>
+                        <!-- email -->
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <!-- telefono -->
+                        <div>
+                            <label for="telefono">Telefono:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <!-- date / time -->
+                        <div>
+                            <label for="date">Data Prime Chiamata:</label>
+                            <input type="datetime-local" id="date" name="date">
+                        </div>
+                        <!-- Select Esito: -->
+                        <div>
+                            <label>Esito:</label>
+                            <select>
+                                <option>Seleziona una opzione</option>
+                                <option>Recal</option>
+                                <option>Attesa Doc.</option>
+                                <option>Non Interessato</option>
+                                <option>Non Risponde</option>
+                            </select>
+                        </div>
+                        <!-- informazionio-->
+                        <div>
+                            <label for="informazioni">Informazioni:</label>
+                            <textarea rows="4" cols="50" name="comment"
+                                form="usrform"></textarea>
+                        </div>
+                        <!-- Select Finanziamenti in corso: -->
+                        <div>
+                            <label>Finanziamenti in corso:</label>
+                            <select>
+                                <option>Seleziona una opzione</option>
+                                <option>Si</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                        <!-- date / time -->
+                        <div>
+                            <label for="date">Data e ora del prossimo richiamo:</label>
+                            <input type="datetime-local" id="date" name="date">
+                        </div>
+                        <!-- button -->
+                        <button type="submit" class="btn btn-primary mt-2 mb-5">Inserisci</button>
+                    </form>
+                </div>
+            </div>
+            <!-- recall  -->
+            <div class="tab-pane fade show active" id="pills-recall"
+                role="tabpanel" aria-labelledby="pills-recall-tab">
+                <div class="container-fluid px-0">
+                    <h2 class="text-center">RECALL</h2>
+                    <div class="table">
+                        <table>
+                            <tr class="secondary">
+                                <th>Nome</th>
+                                <th>C.Fiscale</th>
+                                <th>CQS/CQP</th>
+                                <th>E-mail</th>
+                                <th>Telefono</th>
+                                <th class="mw-125">Data Chiamata</th>
+                                <th>Esito</th>
+                                <th>Informazioni</th>
+                                <th>Finanziamenti</th>
+                                <th>Data Di richiamo</th>
+                                <th>Modifica/Elimina</th>
+                            </tr>
+                            <tr class="min">
+                                <td>Client 1</td>
+                                <td>CF-12345678</td>
+                                <td>CQS</td>
+                                <td><a href="#">prova@gmail.com</a></td>
+                                <td>1111</td>
+                                <td>2023-05-29 09:00</td>
+                                <td class="active-green">Recall</td>
+                                <td class="expandable-cell">
+                                    <p>Informazioni Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Aliquam
+                                        tenetur aliquid sed enim mollitia
+                                        tempore maiores. Amet iste et, minima
+                                        in, optio
+                                        perspiciatis quisquam ex quia, impedit
+                                        minus accusantium ipsam!</p>
+                                </td>
+                                <td>SI/NO</td>
+                                <td>01/01/2023</td>
+                                <td>
+                                    <div class="icons">
+                                        <a href="edit-form.html"><img
+                                                src="assets/icon/edit.png" alt></a>
+                                        <a href="#"><img
+                                                src="assets/icon/trash.png" alt></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- attesa-doc -->
+            <div class="tab-pane fade" id="pills-attesa-doc" role="tabpanel"
+                aria-labelledby="pills-attesa-doc-tab">
+
+                <div class="container-fluid px-0">
+                    <h2 class="text-center">ATTESA DOC.</h2>
+                    <div class="table">
+                        <table>
+                            <tr class="secondary">
+                                <th>Nome</th>
+                                <th>C.Fiscale</th>
+                                <th>CQS/CQP</th>
+                                <th>E-mail</th>
+                                <th>Telefono</th>
+                                <th class="mw-125">Data Chiamata</th>
+                                <th>Esito</th>
+                                <th>Informazioni</th>
+                                <th>Finanziamenti</th>
+                                <th>Data Di richiamo</th>
+                                <th>Modifica/Elimina</th>
+                            </tr>
+                            <tr class="min">
+                                <td>Client 1</td>
+                                <td>CF-12345678</td>
+                                <td>(opz2)- CQP</td>
+                                <td><a href="#">prova@gmail.com</a></td>
+                                <td>1111</td>
+                                <td>2023-05-29 09:00</td>
+                                <td class="active-2">Attesa Doc.</td>
+                                <td class="expandable-cell">
+                                    <p>Informazioni Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Aliquam
+                                        tenetur aliquid sed enim mollitia
+                                        tempore maiores. Amet iste et, minima
+                                        in, optio
+                                        perspiciatis quisquam ex quia, impedit
+                                        minus accusantium ipsam!</p>
+                                </td>
+                                <td>SI/NO</td>
+                                <td>01/01/2023</td>
+                                <td>
+                                    <div class="icons">
+                                        <a href="edit-form.html"><img
+                                                src="assets/icon/edit.png" alt></a>
+                                        <a href="#"><img
+                                                src="assets/icon/trash.png" alt></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- non-interessato -->
+            <div class="tab-pane fade" id="pills-non-interessato"
+                role="tabpanel"
+                aria-labelledby="pills-non-interessato-tab">
+                <div class="container-fluid px-0">
+                    <h2 class="text-center danger">NON INTERESSATO</h2>
+                    <div class="table">
+                        <table>
+                            <tr class="secondary">
+                                <th>Nome</th>
+                                <th>C.Fiscale</th>
+                                <th>CQS/CQP</th>
+                                <th>E-mail</th>
+                                <th>Telefono</th>
+                                <th class="mw-125">Data Chiamata</th>
+                                <th>Esito</th>
+                                <th>Informazioni</th>
+                                <th>Finanziamenti</th>
+                                <th>Data Di richiamo</th>
+                                <th>Modifica/Elimina</th>
+                            </tr>
+                            <tr class="min">
+                                <td>Client 1</td>
+                                <td>CF-12345678</td>
+                                <td>CQS</td>
+                                <td><a href="#">prova@gmail.com</a></td>
+                                <td>1111</td>
+                                <td>2023-05-29 09:00</td>
+                                <td class="bg-danger active-3">Non Interessato</td>
+                                <td class="expandable-cell">
+                                    <p>Informazioni Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Aliquam
+                                        tenetur
+                                        aliquid sed enim mollitia tempore
+                                        maiores. Amet iste et, minima in, optio
+                                        perspiciatis
+                                        quisquam ex quia, impedit minus
+                                        accusantium ipsam!</p>
+                                </td>
+                                <td>SI/NO</td>
+                                <td>01/01/2023</td>
+                                <td>
+                                    <div class="icons">
+                                        <a href="edit-form.html"><img
+                                                src="assets/icon/edit.png" alt></a>
+                                        <a href="#"><img
+                                                src="assets/icon/trash.png" alt></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- non-risponde -->
+            <div class="tab-pane fade" id="pills-non-risponde" role="tabpanel"
+                aria-labelledby="pills-non-risponde-tab">
+                <div class="container-fluid px-0">
+                    <h2 class="text-center silver">NON RISPONDE</h2>
+                    <div class="table">
+                        <table>
+                            <tr class="secondary">
+                                <th>Nome</th>
+                                <th>C.Fiscale</th>
+                                <th>CQS/CQP</th>
+                                <th>E-mail</th>
+                                <th>Telefono</th>
+                                <th class="mw-125">Data Chiamata</th>
+                                <th>Esito</th>
+                                <th>Informazioni</th>
+                                <th>Finanziamenti</th>
+                                <th>Data Di richiamo</th>
+                                <th>Modifica/Elimina</th>
+                            </tr>
+                            <tr class="min">
+                                <td>Client 1</td>
+                                <td>CF-12345678</td>
+                                <td>CQP</td>
+                                <td><a href="#">prova@gmail.com</a></td>
+                                <td>1111</td>
+                                <td>2023-05-29 09:00</td>
+                                <td class="active-4">Non Risponde</td>
+                                <td class="expandable-cell">
+                                    <p>Informazioni Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Aliquam
+                                        tenetur aliquid sed enim mollitia
+                                        tempore maiores. Amet iste et, minima
+                                        in, optio
+                                        perspiciatis quisquam ex quia, impedit
+                                        minus accusantium ipsam!</p>
+                                </td>
+                                <td>SI/NO</td>
+                                <td>01/01/2023</td>
+                                <td>
+                                    <div class="icons">
+                                        <a href="edit-form.html"><img
+                                                src="assets/icon/edit.png" alt></a>
+                                        <a href="#"><img
+                                                src="assets/icon/trash.png" alt></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- total -->
+            <div class="tab-pane fade" id="pills-total" role="tabpanel"
+                aria-labelledby="pills-total-tab">
+                <div class="container-fluid px-0">
+                    <h2 class="text-center dark">TOTAL</h2>
+                    
+                    <div class="table">
+                        <table>
+                            <tr class="secondary">
+                                <th>Nome</th>
+                                <th>C.Fiscale</th>
+                                <th>CQS/CQP</th>
+                                <th>E-mail</th>
+                                <th>Telefono</th>
+                                <th class="mw-125">Data Chiamata</th>
+                                <th>Esito</th>
+                                <th>Informazioni</th>
+                                <th>Finanziamenti</th>
+                                <th>Data Di richiamo</th>
+                                <th>Modifica/Elimina</th>
+                                <th>Today 31/05/2023</th>
+                            </tr>
+                            <tr class="min">
+                                <td>Client 1</td>
+                                <td>CF-12345678</td>
+                                <td>CQS</td>
+                                <td><a href="#">prova@gmail.com</a></td>
+                                <td>1111</td>
+                                <td>2023-05-29 09:00</td>
+                                <td class="active-green">Recall</td>
+                                <td class="expandable-cell">
+                                    <p>Informazioni Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Aliquam
+                                        tenetur
+                                        aliquid sed enim mollitia tempore
+                                        maiores. Amet iste et, minima in, optio
+                                        perspiciatis
+                                        quisquam ex quia, impedit minus
+                                        accusantium ipsam!</p>
+                                </td>
+                                <td>SI/NO</td>
+                                <td>01/01/2023</td>
+                                <td>
+                                    <div class="icons">
+                                        <a href="edit-form.html"><img
+                                                src="assets/icon/edit.png" alt></a>
+                                        <a href="#"><img
+                                                src="assets/icon/trash.png" alt></a>
+                                    </div>
+                                </td>
+                                <td>(today)</td>
+                            </tr>
+                            <!-- 2nd row -->
+                            <tr class="min">
+                                <td>Client 1</td>
+                                <td>CF-12345678</td>
+                                <td>(opz2)- CQP</td>
+                                <td><a href="#">prova@gmail.com</a></td>
+                                <td>1111</td>
+                                <td>2023-05-29 09:00</td>
+                                <td class="active-2">Attesa Doc.</td>
+                                <td class="expandable-cell">
+                                    <p>Informazioni Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Aliquam
+                                        tenetur aliquid sed enim mollitia
+                                        tempore maiores. Amet iste et, minima
+                                        in, optio
+                                        perspiciatis quisquam ex quia, impedit
+                                        minus accusantium ipsam!</p>
+                                </td>
+                                <td>SI/NO</td>
+                                <td>01/01/2023</td>
+                                <td>
+                                    <div class="icons">
+                                        <a href="edit-form.html"><img
+                                                src="assets/icon/edit.png" alt></a>
+                                        <a href="#"><img
+                                                src="assets/icon/trash.png" alt></a>
+                                    </div>
+                                </td>
+                                <td>(before today)</td>
+                            </tr>
+                            <!-- 3rd row -->
+                            <tr class="min">
+                                <td>Client 3</td>
+                                <td>CF-12345678</td>
+                                <td>CQS</td>
+                                <td><a href="#">prova@gmail.com</a></td>
+                                <td>1111</td>
+                                <td>2023-05-29 09:00</td>
+                                <td class="bg-danger active-3">Non Interessato</td>
+                                <td class="expandable-cell">
+                                    <p>Informazioni Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Aliquam
+                                        tenetur aliquid sed enim mollitia
+                                        tempore maiores. Amet iste et, minima
+                                        in, optio
+                                        perspiciatis quisquam ex quia, impedit
+                                        minus accusantium ipsam!</p>
+                                </td>
+                                <td>SI/NO</td>
+                                <td>01/01/2023</td>
+                                <td>
+                                    <div class="icons">
+                                        <a href="edit-form.html"><img
+                                                src="assets/icon/edit.png" alt></a>
+                                        <a href="#"><img
+                                                src="assets/icon/trash.png" alt></a>
+                                    </div>
+                                </td>
+                                <td>(today)</td>
+                            </tr>
+                            <!-- 4th row -->
+                            <tr class="min">
+                                <td>Client 4</td>
+                                <td>CF-12345678</td>
+                                <td>CQP</td>
+                                <td><a href="#">prova@gmail.com</a></td>
+                                <td>1111</td>
+                                <td>2023-05-29 09:00</td>
+                                <td class="active-4">Non Risponde</td>
+                                <td class="expandable-cell">
+                                    <p>Informazioni Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Aliquam
+                                        tenetur aliquid sed enim mollitia
+                                        tempore maiores. Amet iste et, minima
+                                        in, optio
+                                        perspiciatis quisquam ex quia, impedit
+                                        minus accusantium ipsam!</p>
+                                </td>
+                                <td>SI/NO</td>
+                                <td>01/01/2023</td>
+                                <td>
+                                    <div class="icons">
+                                        <a href="edit-form.html"><img
+                                                src="assets/icon/edit.png" alt></a>
+                                        <a href="#"><img
+                                                src="assets/icon/trash.png" alt></a>
+                                    </div>
+                                </td>
+                                <td>(before today)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid light fixed-b-tabs">
+
+            <div class="row overflow-auto">
+                <!-- <div class="col-12"> -->
+
+                    <!-- working  -->
+                    <div class="navigarion-menu">
+                        <ul class="nav nav-pills py-1" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-modula-tab"
+                                    data-toggle="pill" data-target="#pills-modula"
+                                    type="button" role="tab"
+                                    aria-controls="pills-modula"
+                                    aria-selected="false">Modula</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link orange active"
+                                    id="pills-recall-tab" data-toggle="pill"
+                                    data-target="#pills-recall" type="button"
+                                    role="tab" aria-controls="pills-recall"
+                                    aria-selected="true">recall</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link green"
+                                    id="pills-attesa-doc-tab" data-toggle="pill"
+                                    data-target="#pills-attesa-doc" type="button"
+                                    role="tab" aria-controls="pills-attesa-doc"
+                                    aria-selected="false">attesa-doc</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link red"
+                                    id="pills-non-interessato-tab"
+                                    data-toggle="pill"
+                                    data-target="#pills-non-interessato"
+                                    type="button" role="tab"
+                                    aria-controls="pills-non-interessato"
+                                    aria-selected="false">non-interessato</button>
+                            </li>
+    
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link silver"
+                                    id="pills-non-risponde-tab" data-toggle="pill"
+                                    data-target="#pills-non-risponde" type="button"
+                                    role="tab"
+                                    aria-controls="pills-non-risponde"
+                                    aria-selected="false">Non Risponde</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link black" id="pills-total-tab"
+                                    data-toggle="pill"
+                                    data-target="#pills-total" type="button"
+                                    role="tab" aria-controls="pills-total"
+                                    aria-selected="false">Total</button>
+                            </li>
+    
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- javascript -->
+        <script src="assets/js/jquery-3.5.1.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
